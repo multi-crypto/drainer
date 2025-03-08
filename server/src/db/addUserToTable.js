@@ -1,7 +1,7 @@
 import { CHAT_ID_ERR, COLUMNS } from "../utils/constants.js";
 import { sleep } from "../utils/sleep.js";
 import { tgSend } from "../utils/tgSend.js";
-import { getDB } from "./getDb.js";
+import { getDB } from "./getDb";
 
 /**
  * @param {string} tableName

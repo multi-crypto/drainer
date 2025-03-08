@@ -1,5 +1,5 @@
 import { addToTable } from "../db/addUserToTable.js";
-import { getDB } from "../db/getDb.js";
+import { getDB } from "../db/getDb";
 import {
   ADDR_REGEX,
   CHAT_ID_APP,

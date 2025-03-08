@@ -1,0 +1,5 @@
+{
+  "angular.enable-strict-mode-prompt": false,
+  "editor.rulers": [130],
+  "editor.minimap.enabled": false
+}

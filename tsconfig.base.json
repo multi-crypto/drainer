@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ES2023",
+        "module": "NodeNext",
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "noImplicitAny": false,
+        "moduleResolution": "nodenext",
+        "sourceMap": true,
+        "outDir": "dist"
+    },
+    
+}

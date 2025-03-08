@@ -1,4 +1,4 @@
-import { getDB } from "./getDb.js";
+import { getDB } from "./getDb";
 
 /**
  * @param {string} tableName
