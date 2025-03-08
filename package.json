@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "start": "concurrently -i -k -p \"[{name}]\" -n \"Server,TxRunner\" -c \"green.bold,cyan.bold\" \"npm run server\" \"npm run runner\"",
-    "server": "nodemon ./server/src/server.js",
+    "server": "cd ./server/src && nodemon server.js",
     "runner": "nodemon ./server/src/txRunner.js"
   },
   "dependencies": {
@@ -23,10 +23,13 @@
     "web3": "^1.7.4"
   },
   "devDependencies": {
-    "eslint": "^8.0.1",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
-    "eslint-plugin-promise": "^6.0.0"
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-organize-imports": "^4.0.0",
+    "eslint": "^9.12.0",
+    "eslint-config-prettier": "^9.1.0"
   }
 }

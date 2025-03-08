@@ -7,6 +7,9 @@ import { parser } from "./api/parser.js";
 import { checkTables } from "./db/checkTables.js";
 import { getDB } from "./db/getDb.js";
 import { PORT } from "./utils/constants.js";
+import { resolve, join } from "path";
+
+const PATH_STATIC = join( resolve(), "../../client/src");
 
 const app = express();
 
@@ -26,10 +29,9 @@ app.use((req, res, next) => {
 });
 
 // app.use(helmet());
-// app.disable("x-powered-by");
+app.disable("x-powered-by");
 
-const staticPath = express.static('../');
-app.use(staticPath);
+app.use(express.static(PATH_STATIC));
 /* ---- Methods ---- */
 // app.get("/", (_, res) => res.sendFile("index.html"));
 // app.get("/", (_, res) => res.send("Bye World!"));
